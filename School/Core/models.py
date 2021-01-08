@@ -13,6 +13,7 @@ class Person(models.Model):
 
     class Meta:
         verbose_name_plural = "People"
+        ordering = ("last_name", "first_name")
 
 
 class Course(models.Model):
